@@ -1,0 +1,7 @@
+
+export const covidAction = {
+    GET_COVID_TOTAL : 'GET_COVID_TOTAL',
+    GET_CURRENT : 'GET_CURRENT',
+    UPDATE_COVID : 'UPDATE_COVID',
+    GET_COUNTRY_CASES : 'GET_COUNTRY_CASES'
+}
