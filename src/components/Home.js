@@ -39,8 +39,19 @@ export class Home extends Component {
     }
 
     render() {
-        // console.log(`covids `, this.props.covids)
         const { totals : { data }, current, timeseries } = this.props.covids
+
+        const ccdata = current.data;
+
+        // console.log(`ccdata `, ccdata)
+        // if(ccdata){
+        //     ccdata = ccdata.sort((a, b) => parseFloat(b.active) - parseFloat(a.active))
+        // console.log(`ccdata `, ccdata)
+
+        // }
+
+        // current.data = current.data.
+        // sort((a, b) => parseFloat(a.active) - parseFloat(b.active));
 
         const divStyle={
             overflowY: 'scroll',

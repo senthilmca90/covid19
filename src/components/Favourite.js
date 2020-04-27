@@ -13,8 +13,6 @@ export const actionFormatter = (cell, row, rowIndex) => {
         )
 }
 
-
-
 export class Favourite extends Component {
 
     onPinnedFormatter = (cell, row, rowIndex) => {

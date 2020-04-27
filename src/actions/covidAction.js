@@ -11,6 +11,9 @@ export const getCovidTotal = () => dispatch => {
 
 export const getCurrent = () => dispatch => {
     return Axios.get(`https://covid2019-api.herokuapp.com/v2/current`).then(res => {
+            const { data } = res.data
+            // const ccdata = data.sort((a, b) => parseFloat(b.active) - parseFloat(a.active) && parseFloat(b.deaths) - parseFloat(a.deaths))
+            // console.log(`action data `, data)
         dispatch({type: covidAction.GET_CURRENT, payload: res.data})
     })
 }
